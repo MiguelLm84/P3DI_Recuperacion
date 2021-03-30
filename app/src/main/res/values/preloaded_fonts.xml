@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/amaranth</item>
+        <item>@font/arbutus</item>
+        <item>@font/architects_daughter</item>
+        <item>@font/fugaz_one</item>
+        <item>@font/russo_one</item>
+        <item>@font/suez_one</item>
+        <item>@font/wendy_one</item>
+    </array>
+</resources>

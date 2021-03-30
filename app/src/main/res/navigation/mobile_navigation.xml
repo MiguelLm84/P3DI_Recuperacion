@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    android:label="@string/title_tareas"
+    app:startDestination="@id/navigation_tareas">
+
+    <fragment
+        android:id="@+id/navigation_favoritas"
+        android:name="com.miguel_lm.newapptodo.ui.fragments.FragmentTareasFav"
+        android:label="@string/title_tareas_fav"
+        tools:layout="@layout/fragment_tareas_fav">
+        <action
+            android:id="@+id/action_navigation_favoritas_to_navigation_completadas"
+            app:destination="@id/navigation_completadas"
+            app:enterAnim="@anim/left_in"
+            app:exitAnim="@anim/left_out"
+            app:popEnterAnim="@anim/left_in"
+            app:popExitAnim="@anim/left_out" />
+        <action
+            android:id="@+id/action_navigation_favoritas_to_navigation_tareas"
+            app:destination="@id/navigation_tareas"
+            app:enterAnim="@anim/left_in"
+            app:exitAnim="@anim/left_out"
+            app:popEnterAnim="@anim/left_in"
+            app:popExitAnim="@anim/left_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_tareas"
+        android:name="com.miguel_lm.newapptodo.ui.fragments.FragmentTareas"
+        android:label="@string/title_tareas"
+        tools:layout="@layout/fragment_tareas">
+        <action
+            android:id="@+id/action_navigation_tareas_to_navigation_favoritas"
+            app:destination="@id/navigation_favoritas"
+            app:enterAnim="@anim/right_in"
+            app:exitAnim="@anim/right_out"
+            app:popEnterAnim="@anim/right_in"
+            app:popExitAnim="@anim/right_out" />
+        <action
+            android:id="@+id/action_navigation_tareas_to_navigation_completadas"
+            app:destination="@id/navigation_completadas"
+            app:enterAnim="@anim/right_in"
+            app:exitAnim="@anim/right_out"
+            app:popEnterAnim="@anim/right_in"
+            app:popExitAnim="@anim/right_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_completadas"
+        android:name="com.miguel_lm.newapptodo.ui.fragments.FragmentTareasCompletadas"
+        android:label="@string/title_completadas"
+        tools:layout="@layout/fragment_tareas_completadas">
+        <action
+            android:id="@+id/action_navigation_completadas_to_navigation_favoritas"
+            app:destination="@id/navigation_favoritas"
+            app:enterAnim="@anim/left_in"
+            app:exitAnim="@anim/left_out"
+            app:popEnterAnim="@anim/left_in"
+            app:popExitAnim="@anim/left_out" />
+        <action
+            android:id="@+id/action_navigation_completadas_to_navigation_tareas2"
+            app:destination="@id/navigation_tareas"
+            app:enterAnim="@anim/left_in"
+            app:exitAnim="@anim/left_out"
+            app:popEnterAnim="@anim/left_in"
+            app:popExitAnim="@anim/left_out" />
+    </fragment>
+</navigation>

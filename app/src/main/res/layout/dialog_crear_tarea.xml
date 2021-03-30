@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/titulo_tareaNueva"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:autofillHints=""
+        android:background="@drawable/shape_splash"
+        android:ems="10"
+        android:fontFamily="@font/russo_one"
+        android:foregroundTint="#2196F3"
+        android:inputType="none"
+        android:shadowColor="#FFFFFF"
+        android:text="@string/tv_titulo_nueva_tarea"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        tools:ignore="TextViewEdits" />
+
+    <TextView
+        android:id="@+id/tv_nombreTarea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/russo_one"
+        android:text="@string/tv_titulo_nom_tarea"
+        android:textColor="@color/toolbar"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edTxt_tarea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="20dp"
+        android:autofillHints=""
+
+        android:background="@null"
+        android:fontFamily="@font/russo_one"
+        android:hint="@string/tv_nombre_tarea"
+        android:inputType="text"
+        android:maxLength="25"
+        android:textColor="#D32F2F"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_fechaTarea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/russo_one"
+        android:text="@string/Fecha"
+        android:textColor="@color/toolbar"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_fecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="50dp"
+        android:autofillHints=""
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/russo_one"
+        android:hint="@string/tv_fecha_nueva"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:textColor="#D32F2F"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_cancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_boton_redondeado"
+            android:fontFamily="@font/russo_one"
+            android:onClick="onClickButtonCancelar"
+            android:text="@string/btn_cancelar"
+            android:textColor="@color/toolbar"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/btn_aceptar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_boton_redondeado_2"
+            android:fontFamily="@font/russo_one"
+            android:onClick="onClickButtonAceptar"
+            android:text="@string/btn_aceptar"
+            android:textColor="@color/toolbar"
+            android:textSize="14sp"
+            tools:ignore="ButtonStyle" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_tituloNuevaTarea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="36dp"
+        android:background="@drawable/shape_splash"
+        android:fontFamily="@font/russo_one"
+        android:text="@string/tv_titulo_nueva_tarea"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_nomTarea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/russo_one"
+        android:text="@string/tv_nombre_tarea"
+        android:textColor="@color/toolbar"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/ed_nomTarea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="20dp"
+        android:autofillHints=""
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:fontFamily="@font/russo_one"
+        android:hint="@string/tv_nombre_tarea"
+        android:inputType="text"
+        android:textColor="#D32F2F"
+        android:textColorHint="#C5C2C2"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_titulo_Fecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/russo_one"
+        android:onClick="cambiarFecha"
+        android:text="@string/Fecha"
+        android:textColor="@color/toolbar"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/textViewTareaFechaLimite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:fontFamily="@font/russo_one"
+        android:hint="@string/tv_fecha_nueva"
+        android:inputType="date"
+        android:onClick="cambiarFecha"
+        android:textColor="#D32F2F"
+        android:textSize="16sp"
+        tools:ignore="TextViewEdits" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="36dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/russo_one"
+            android:text="Marcar como favorito"
+            android:textColor="@color/toolbar"
+            android:textSize="16sp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/btn_Fav_blanco2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/todo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/favorito" />
+
+            <ImageButton
+                android:id="@+id/btn_Fav_amarillo2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/todo"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/estrella__1_" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="36dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_cancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_boton_redondeado"
+            android:fontFamily="@font/russo_one"
+            android:onClick="buttonCancelarClick"
+            android:text="@string/btn_cancelar"
+            android:textColor="@color/toolbar"
+            android:textSize="14sp"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/btn_aceptar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_boton_redondeado_2"
+            android:fontFamily="@font/russo_one"
+            android:onClick="buttonOkClick"
+            android:text="@string/btn_aceptar"
+            android:textColor="@color/toolbar"
+            android:textSize="14sp"
+            tools:ignore="ButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

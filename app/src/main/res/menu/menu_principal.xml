@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/btnMas"
+        android:icon="@drawable/ic_baseline_more_vert_24"
+        android:title="@string/mas"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/accionCrearTarea"
+                android:background="@color/menus_dialog"
+                android:icon="@drawable/ic_baseline_create_24"
+                android:menuCategory="system"
+                android:title="@string/accionCrear_tarea" />
+            <item
+                android:id="@+id/accionModificar"
+                android:background="@color/menus_dialog"
+                android:icon="@drawable/ic_edit_button"
+                android:menuCategory="system"
+                android:title="@string/accionModificarTarea" />
+            <item
+                android:id="@+id/accionEliminar"
+                android:background="@color/menus_dialog"
+                android:icon="@drawable/ic_eliminar__1_"
+                android:menuCategory="system"
+                android:title="@string/accionEliminarTarea" />
+        </menu>
+    </item>
+</menu>

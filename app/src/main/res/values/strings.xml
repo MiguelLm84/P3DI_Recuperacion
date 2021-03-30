@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">New AppToDo</string>
+    <string name="title_tareas_fav">Favoritos</string>
+    <string name="title_tareas">Tareas</string>
+    <string name="title_completadas">Completadas</string>
+    <string name="todo">todo</string>
+    <string name="tv_nombre_tarea">Nombre Tarea</string>
+    <string name="tv_fecha_tarea">Fecha</string>
+    <string name="tv_hora_tarea">Hora</string>
+    <string name="tv_tareaNueva">Tarea</string>
+    <string name="tv_fecha_nueva">01/01/2021</string>
+    <string name="tv_hora_nueva">00:00</string>
+    <string name="tv_titulo_nueva_tarea">Nueva Tarea</string>
+    <string name="tv_titulo_nom_tarea">Título tarea</string>
+    <string name="Fecha">Fecha</string>
+    <string name="btn_cancelar">Cancelar</string>
+    <string name="btn_aceptar">Aceptar</string>
+    <string name="textViewTareaFechaLimite">Fecha Límite (pulse para cambiar):</string>
+    <string name="accionCrear_tarea">Crear Tarea</string>
+    <string name="accionModificarTarea">Modificar</string>
+    <string name="accionEliminarTarea">Eliminar</string>
+    <string name="tv_tituloSplash">AppToDoList</string>
+    <string name="tv_titulo_toolbar">Seleccionar Elementos</string>
+    <string name="tv_nombre_tarea_hint">Nombre Tarea</string>
+    <string name="mas">Mas</string>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_tareas"
+        android:icon="@drawable/clipboard__1_"
+        android:title="@string/title_tareas" />
+    <item
+        android:id="@+id/navigation_favoritas"
+        android:icon="@drawable/estrella__1_"
+        android:title="@string/title_tareas_fav" />
+
+    <item
+        android:id="@+id/navigation_completadas"
+        android:icon="@drawable/cheque"
+        android:title="@string/title_completadas" />
+
+</menu>
